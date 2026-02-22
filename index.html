@@ -88,8 +88,46 @@
     font-weight: 600;
     margin-bottom: 15px;
     }
+
+    nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+
+     .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+    .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--deep-gold);
+            transition: 0.3s;
+        }
+
+    .nav-links a:hover {
+            color: var(--primary-pink);
+        }
+    
 </style>
 <body>
+
+    <header>
+        <nav>
+            <a href="index.html">Intramural SY 2025-2026</a>
+            <ul class="nav-links">
+                 <li><a href="https://jgrospe2425.github.io/GH_ICT10_Q3_Seatwork2_Grospe_Jillian/">Sign Up</a></li>
+                <li><a href="https://jgrospe2425.github.io/GH_ICT10_Q3SkillsTestGrospe_Jillian/">Team Checker</a></li>
+                <li><a href="https://jgrospe2425.github.io/Players/">Players</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <form>
         <h1>Players</h1>
@@ -100,4 +138,5 @@
     </form>
     <py-script src="main.py"></py-script>
 </body>
+
 </html>
